@@ -11,7 +11,7 @@ export async function searchFallback(urlInfo) {
   try {
     const response = await axios.get("https://html.duckduckgo.com/html/", {
       params: { q: query },
-      timeout: 8000,
+      timeout: 4000,
       headers: { "User-Agent": "Mozilla/5.0 (compatible; WebBrief/1.0)" }
     });
     const $ = cheerio.load(response.data);

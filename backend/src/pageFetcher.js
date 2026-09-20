@@ -4,7 +4,7 @@ import * as cheerio from "cheerio";
 export async function fetchPublicPage(url) {
   try {
     const response = await axios.get(url, {
-      timeout: 10000,
+      timeout: 5000,
       maxRedirects: 5,
       headers: {
         "User-Agent": "Mozilla/5.0 (compatible; WebBrief/1.0)"
@@ -32,7 +32,7 @@ export async function fetchPublicPage(url) {
     return {
       status: "success",
       title,
-      text: text.slice(0, 18000),
+      text: text.slice(0, 10000),
       finalUrl: response.request?.res?.responseUrl || url,
       note: "Public HTML was fetched successfully."
     };
