@@ -208,7 +208,10 @@ A loading indicator is also displayed while the webpage is being analyzed.
 The project can be deployed with:
 
 * Frontend: Vercel
+https://ai-url-briefer.vercel.app/
+
 * Backend: Render
+
 
 The frontend communicates with the deployed backend API.
 
