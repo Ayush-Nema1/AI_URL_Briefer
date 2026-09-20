@@ -83,7 +83,7 @@ export default function App() {
         <input
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          placeholder="https://leetcode.com/problems/two-sum"
+          placeholder="https://leetcode.com"
           type="url"
           required
         />
